@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>This is my first web page!</title>
-  </head>
-  <body>
-    <h1>This is the title of my page!</h1>
-    <p>This is a paragraph!</p>
-    <details open>
-        <summary>This is the dropdown title</summary>
-        <p>This is the content inside of the dropdown</p>
-    </details>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* CSS Reset */
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: brown;
+    }
+
+    div {
+      box-sizing: border-box;
+      width: 100px;
+      height: 100px;
+      background: chartreuse;
+      margin: calc(50vh - 50px) auto;
+      padding-top: 30px;
+      border: 4px dotted white;
+      outline: 10px solid green;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    Hello
+  </div>
+</body>
 </html>

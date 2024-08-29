@@ -1,0 +1,23 @@
+/* p:nth-child(-2n + 6) {
+    color: blue;
+} */
+
+section + p {
+    text-decoration: underline;
+    font-family: Impact;
+    font-size: 40px;
+}
+
+section ~ p {
+    border: 2px solid yellow;
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+article::before {
+    content: "Hi";
+}
+
+article:hover::before {
+    content: "Bye";
+}
