@@ -1,0 +1,23 @@
+h1 {
+    text-shadow: 
+        5px 5px 10px #2d2d2d,
+        -3px -3px 10px blue;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    /* box-shadow: 10px 10px 50px 10px #2d2d2d; */
+    clip-path: polygon(
+        50% 0,
+        100% 50%,
+        50% 100%,
+        0% 50%
+    );
+}
+
+section {
+    filter: drop-shadow(10px 10px 5px #2d2d2d);
+    box-shadow: 10px 10px 50px 10px #2d2d2d;
+}
