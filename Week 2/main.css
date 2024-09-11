@@ -1,0 +1,45 @@
+@keyframes wobble {
+    25% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    /* transition: border-radius linear 1s, background ease-in 3s; */
+    transition: linear 3s;
+    animation: wobble linear 2s forwards;
+    animation-delay: 4s;
+    /* clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        50% 50%,
+        0% 25%
+    ); */
+}
+
+div:hover {
+    clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        50% 100%,
+        0% 25%
+    )
+}
+
+/* div:hover {
+    background: green;
+    border-radius: 100%;
+} */
+
