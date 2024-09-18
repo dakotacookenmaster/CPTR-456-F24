@@ -1,0 +1,87 @@
+html, body, h1, img {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+}
+
+/* div {
+    width: 200px;
+    height: 200px;
+    background: teal;
+} */
+
+/* section {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: grey;
+    height: 100vh;
+    align-content: space-evenly;
+    justify-content: center;
+} */
+
+header {
+    background: #2d2d2d;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 30px;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    background: rgb(41, 69, 183);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+a:hover {
+    outline: 2px solid rgb(41, 69, 183);
+    color: rgb(41, 69, 183);
+    background: white;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.gallery img {
+    height: 200px;
+    border-radius: 5%;
+}
+
+.overlay {
+    border: 5px solid orange;
+    display: none;
+}
+
+.gallery > div {
+    position: relative;
+}
+
+.gallery img:not(.overlay) {
+    position: relative;
+    z-index: 0;
+}
+
+.gallery img:hover + .overlay, .overlay:hover {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+    height: 300px;
+}
